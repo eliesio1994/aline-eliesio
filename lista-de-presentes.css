@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+    background-color: #d2bab2;
+    padding: 20px;
+    display: flex;
+    max-height: 20px;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente o conteúdo do cabeçalho */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #b02c01;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #b02c01;
+}
+
+.logo {
+    display: flex; /* Cria um novo flex container para a logo e o nome do casal */
+    align-items: center; /* Centraliza verticalmente dentro do container da logo */
+    justify-content: center;
+    flex: 1; /* Ocupa o espaço restante entre a logo e o menu */
+}
+
+.logo img {
+    width: 120px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+.banner {
+    background-color: #b02c01;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+.lista-de-presentes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.presente {
+    width: calc(25% - 20px); /* 25% para 4 imagens por linha */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.presente img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.presente p {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .presente {
+        width: 100%; /* 100% para 1 imagem por linha em dispositivos móveis */
+    }
+}
+.formulario-reserva {
+    display: none;
+}
